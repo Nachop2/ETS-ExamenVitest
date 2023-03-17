@@ -3,6 +3,11 @@ import { fizzbuzz } from '../src/fizzbuzz'
 
 describe("fizzbuzz",(): void => {
 
+    it("Le damos un string, deberia dar error", (): void => {
+        expect((): String => fizzbuzz("a")).toThrow()
+    })
+
+    /*expect((): number => transporteRegalos(2,"a")).toThrow()*/
     it("Le damos el valor 2, el cual deberia igualar a Ignacio", (): void => {
         expect(fizzbuzz(2)).equals("Ignacio")
     })
