@@ -10,11 +10,11 @@ import { describe, it, expect } from 'vitest'
 //
 
 
-export const transporteRegalos = (tipoRegalos, nombreRenos): number => {
+export const distributeGiftsIgnacio = (tipoRegalos, nombreRenos): number => {
     if (typeof tipoRegalos != 'string') throw new Error('debe ser un string')
     if (typeof nombreRenos != 'string') throw new Error('debe ser un string')
     const pesoRegalo = tipoRegalos.length
-    const pesoReno = nombreRenos.length * 2
+    const pesoReno = nombreRenos.length * 4
     return Math.floor(pesoReno / pesoRegalo)
 }
 
