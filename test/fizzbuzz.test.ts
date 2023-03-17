@@ -30,6 +30,11 @@ describe("fizzbuzz",(): void => {
     it("Le damos el valor 33, el cual deberia igualar a Revilla Italiyankina", (): void => {
         expect(fizzbuzz(33)).equals("RevillaItaliyankina")
     })
+
+    it("Le damos el valor 66, el cual deberia igualar a Ignacio Revilla Italiyankina", (): void => {
+        expect(fizzbuzz(66)).equals("IgnacioRevillaItaliyankina")
+    })
+
 })
     
 
